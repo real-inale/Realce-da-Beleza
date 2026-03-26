@@ -23,7 +23,7 @@ export default function Home() {
       <CatalogSection />
 
       {/* Mini Testimonial Section */}
-      <section className="testimonials py-32 px-6 bg-brand-pink/10 luxury-gradient">
+      <section className="testimonials py-24 md:py-32 px-6 bg-brand-pink/10 luxury-gradient">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
              <div className="text-center mb-20 max-w-2xl flex flex-col items-center">
                 <span className="text-[10px] uppercase tracking-[0.4em] font-black text-brand-gold mb-6 inline-block">Depoimentos Realce</span>
@@ -40,7 +40,7 @@ export default function Home() {
                   { name: "Carla Mendes", role: "Sessão Fotográfica", text: "Vestidos de altíssima qualidade. O 'Aurora Elegance' é simplesmente deslumbrante na câmera." },
                 ].map((testimonial, i) => (
                   <div key={i} className="glass-card p-10 rounded-3xl border-brand-nude hover:border-brand-gold transition-all duration-500 shadow-xl shadow-brand-pink/5">
-                     <p className="text-gray-600 italic mb-8 italic leading-relaxed">"{testimonial.text}"</p>
+                     <p className="text-gray-600 italic mb-8 leading-relaxed">"{testimonial.text}"</p>
                      <div className="flex items-center gap-4 pt-4 border-t border-brand-nude">
                         <div className="w-12 h-12 bg-brand-gold text-white rounded-full flex items-center justify-center font-serif font-bold text-lg uppercase tracking-widest shadow-lg">
                            {testimonial.name[0]}
@@ -57,12 +57,12 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="cta py-32 px-6 bg-brand-black text-white text-center relative overflow-hidden">
+      <section className="cta py-24 md:py-32 px-6 bg-brand-black text-white text-center relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
         <div className="max-w-4xl mx-auto relative z-10 flex flex-col items-center">
             <span className="text-[10px] uppercase tracking-[0.4em] font-black text-brand-gold mb-8 inline-block opacity-80">FAÇA PARTE DO LUXO</span>
-            <h2 className="text-4xl md:text-7xl font-serif font-black mb-10 leading-tight">
-                Pronta para <span className="text-brand-gold italic font-normal">brilhar</span> no seu próximo evento? ✨
+            <h2 className="text-3xl sm:text-4xl md:text-7xl font-serif font-black mb-10 leading-tight px-4">
+                Pronta para <br className="sm:hidden" /><span className="text-brand-gold italic font-normal">brilhar</span> no seu próximo evento? ✨
             </h2>
             <p className="text-lg md:text-xl text-gray-400 mb-14 max-w-[600px] mx-auto leading-relaxed font-sans">
                 Não deixe para a última hora. Reserve seu vestido exclusivo hoje mesmo e garanta sua data favorita no <span className="text-white font-bold">Camama</span>.
@@ -81,7 +81,7 @@ export default function Home() {
 
       {/* Location Bar */}
       <div className="location-bar bg-brand-nude py-6 px-6 border-y border-brand-gold/10">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-10 text-xs font-bold uppercase tracking-[0.2em] text-brand-black/70">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 sm:gap-10 text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-brand-black/70">
             <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-brand-gold" />
                 <span>Camama (Frente ao Cemitério)</span>

@@ -17,9 +17,9 @@ const vestidosDestaque = [
 
 export const CatalogSection = () => {
     return (
-        <section className="catalog py-32 px-6 font-sans bg-white overflow-hidden">
+        <section className="catalog py-24 md:py-32 px-6 font-sans bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 px-4 md:px-0">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 md:mb-20 gap-8 px-4 md:px-0">
                     <div className="max-w-xl">
                         <span className="text-[10px] uppercase tracking-[0.4em] font-black text-brand-gold mb-6 inline-block opacity-80 animate-fade-in">Galeria de Destaque</span>
                         <h2 className="text-4xl md:text-6xl font-serif font-black text-brand-black leading-tight">

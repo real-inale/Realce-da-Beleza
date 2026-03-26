@@ -31,8 +31,8 @@ export default function SobrePage() {
             </section>
 
             {/* Emotional Story telling */}
-            <section className="py-24 px-6 max-w-7xl mx-auto">
-                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
+            <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-20">
                      <div className="relative h-[400px] md:h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl group">
                           <Image 
                             src="/catalog_main.png" 
@@ -78,7 +78,7 @@ export default function SobrePage() {
             </section>
 
             {/* Values Section */}
-            <section className="py-24 px-6 bg-brand-black text-white text-center relative overflow-hidden">
+            <section className="py-16 md:py-24 px-6 bg-brand-black text-white text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-gold to-transparent opacity-50" />
                 <div className="max-w-7xl mx-auto">
                     <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-gold mb-16 inline-block">Nossos Valores</span>
@@ -102,7 +102,7 @@ export default function SobrePage() {
             </section>
 
             {/* Visit Us Section */}
-            <section className="py-24 px-6 max-w-7xl mx-auto text-center">
+            <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto text-center">
                  <div className="max-w-3xl mx-auto">
                     <h2 className="text-4xl font-serif font-bold text-brand-black mb-8 leading-tight">Visite nosso <span className="italic text-brand-gold">Espaço Físico</span></h2>
                     <p className="text-gray-600 mb-12 text-lg">Nada substitui o toque e a prova de um vestido perfeito. Estamos localizados no Camama, prontos para te receber com carinho.</p>

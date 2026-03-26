@@ -43,7 +43,7 @@ export default function AcessoriosPage() {
             </section>
 
             {/* Accessories Grid */}
-            <section className="py-20 px-6 max-w-7xl mx-auto">
+            <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-16">
                     {allAcessorios.map((item) => (
                         <div key={item.id} className="group cursor-pointer">
@@ -72,7 +72,7 @@ export default function AcessoriosPage() {
             </section>
 
             {/* Special Pack Section */}
-            <section className="py-24 px-6 bg-brand-black text-white relative overflow-hidden">
+            <section className="py-16 md:py-24 px-6 bg-brand-black text-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
                     <div className="relative h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl relative group">
                          <Image src="/catalog_main.png" alt="Combo Promo" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />

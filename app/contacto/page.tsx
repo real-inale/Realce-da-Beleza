@@ -27,8 +27,8 @@ export default function ContactoPage() {
             </section>
 
             {/* Contact Grid */}
-            <section className="py-24 px-6 max-w-7xl mx-auto">
-                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
+            <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
                     {/* Contact Info Cards */}
                     <div className="flex flex-col gap-10 order-2 lg:order-1">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -121,7 +121,7 @@ export default function ContactoPage() {
             </section>
 
             {/* Social Connection CTA */}
-            <section className="py-24 px-6 bg-brand-nude/50 mb-10">
+            <section className="py-16 md:py-24 px-6 bg-brand-nude/50 mb-10">
                  <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-black mb-12 leading-tight">Siga o nosso <span className="italic text-brand-gold">Dia a Dia</span></h2>
                     <div className="flex flex-wrap justify-center gap-10">

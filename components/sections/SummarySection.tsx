@@ -13,11 +13,11 @@ const workflow = [
 
 export const SummarySection = () => {
     return (
-        <section className="summary py-32 px-6 font-sans luxury-gradient">
+        <section className="summary py-20 md:py-32 px-6 font-sans luxury-gradient">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 
                 {/* Brand Emotion */}
-                <div className="text-center mb-32 max-w-3xl flex flex-col items-center">
+                <div className="text-center mb-20 md:mb-32 max-w-3xl flex flex-col items-center">
                     <div className="flex justify-center gap-1 mb-8 text-brand-gold opacity-80">
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
@@ -25,8 +25,8 @@ export const SummarySection = () => {
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
                     </div>
-                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-brand-black mb-10 leading-tight">
-                        Criamos este espaço com carinho para <br className="hidden md:block" />
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-black text-brand-black mb-8 md:mb-10 leading-tight">
+                        Criamos este espaço com carinho para <br className="hidden lg:block" />
                         <span className="italic font-normal text-brand-gold">valorizar a beleza feminina</span>
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 max-w-[600px] font-medium">

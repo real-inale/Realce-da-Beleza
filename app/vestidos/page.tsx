@@ -53,7 +53,7 @@ export default function VestidosPage() {
             </section>
 
             {/* Catalog & Filters */}
-            <section className="py-20 px-6 max-w-7xl mx-auto">
+            <section className="py-16 md:py-24 px-6 max-w-7xl mx-auto">
                 {/* Filters Bar */}
                 <div className="flex flex-wrap items-center justify-between gap-6 mb-16 border-b border-gray-100 pb-10">
                     <div className="flex items-center gap-2 text-brand-black font-bold uppercase tracking-widest text-xs">
@@ -147,7 +147,7 @@ export default function VestidosPage() {
             </section>
 
             {/* Support CTA */}
-            <section className="py-20 px-6 bg-brand-nude">
+            <section className="py-16 md:py-24 px-6 bg-brand-nude">
                 <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
                     <div className="text-center md:text-left">
                         <h2 className="text-2xl md:text-3xl font-serif font-bold text-brand-black mb-4">Ainda com dúvidas?</h2>
