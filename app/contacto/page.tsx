@@ -13,7 +13,10 @@ export default function ContactoPage() {
             <Navbar />
             
             {/* Header Section */}
-            <section className="relative pt-[150px] md:pt-[220px] pb-32 md:pb-48 px-6 bg-brand-black text-white text-center overflow-hidden">
+            <section 
+                className="relative w-full min-h-[65vh] flex flex-col items-center justify-center px-6 bg-brand-black text-white text-center overflow-hidden z-10"
+                style={{ paddingTop: '160px', paddingBottom: '80px' }}
+            >
                  <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
                  <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-pink/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3" />
                  <div className="max-w-4xl mx-auto relative z-10">
