@@ -3,10 +3,10 @@
 import React from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { Heart, Shield, Star, Sparkles, MapPin, Phone, MessageCircle } from "lucide-react";
+import { Phone, MessageCircle, MapPin, Mail, Clock, Instagram, Facebook, Heart, Shield, Star, Sparkles } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import { Button } from "@/components/ui/Button";
 
 export default function SobrePage() {
     return (
