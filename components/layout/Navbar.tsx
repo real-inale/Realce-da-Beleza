@@ -49,20 +49,20 @@ export const Navbar = () => {
               fill 
               className={cn(
                 "object-contain transition-all duration-700 group-hover:scale-110",
-                scrolled ? "brightness-100" : (pathname === "/" ? "brightness-0 invert group-hover:brightness-100 group-hover:invert-0" : "brightness-100")
+                scrolled ? "brightness-100" : "brightness-0 invert group-hover:brightness-100 group-hover:invert-0"
               )}
             />
           </div>
           <div className="flex flex-col">
             <span className={cn(
                 "text-md md:text-xl font-serif font-black tracking-tighter transition-all duration-500 leading-none",
-                scrolled ? "text-brand-black" : (pathname === "/" ? "text-white" : "text-brand-black")
+                scrolled ? "text-brand-black" : "text-white"
               )}>
                 Realce da
             </span>
             <span className={cn(
                 "text-xs md:text-sm font-serif font-bold tracking-[0.2em] uppercase transition-all duration-500 leading-none",
-                scrolled ? "text-brand-gold" : (pathname === "/" ? "text-brand-gold" : "text-brand-gold")
+                scrolled ? "text-brand-gold" : "text-brand-gold"
               )}>
                 Beleza
             </span>
@@ -77,7 +77,7 @@ export const Navbar = () => {
               href={link.href}
               className={cn(
                 "text-[10px] uppercase tracking-[0.2em] font-black transition-all hover:text-brand-gold relative group whitespace-nowrap",
-                pathname === link.href ? "text-brand-gold" : (scrolled ? "text-brand-black" : (pathname === "/" ? "text-white" : "text-brand-black"))
+                pathname === link.href ? "text-brand-gold" : (scrolled ? "text-brand-black" : "text-white")
               )}
             >
               {link.name}
@@ -91,10 +91,10 @@ export const Navbar = () => {
             href="https://wa.me/244943700307?text=Olá, gostaria de reservar um vestido."
             target="_blank"
             className={cn(
-                "ml-4 px-8 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-black transition-all shadow-xl hover:shadow-brand-gold/20 active:scale-95 whitespace-nowrap",
+                "ml-4 px-8 py-3 rounded-full text-[10px] uppercase tracking-[0.2em] font-black transition-all shadow-xl hover:shadow-brand-gold/20 active:scale-95 whitespace-nowrap border",
                 scrolled 
-                    ? "bg-brand-black text-white hover:bg-brand-gold" 
-                    : (pathname === "/" ? "bg-white text-brand-black hover:bg-brand-gold hover:text-white" : "bg-brand-black text-white hover:bg-brand-gold")
+                    ? "bg-brand-black text-white hover:bg-brand-gold border-brand-black" 
+                    : "bg-white text-brand-black hover:bg-brand-gold hover:text-white border-white"
             )}
           >
             Reservar Agora
@@ -105,7 +105,7 @@ export const Navbar = () => {
         <button
           className={cn(
             "lg:hidden p-3 rounded-full transition-all active:scale-90",
-            scrolled || pathname !== "/" ? "bg-brand-black/5 text-brand-black" : "bg-white/10 text-white backdrop-blur-md"
+            scrolled ? "bg-brand-black/5 text-brand-black" : "bg-white/10 text-white backdrop-blur-md"
           )}
           onClick={() => setIsOpen(true)}
         >

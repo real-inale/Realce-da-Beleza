@@ -14,11 +14,16 @@ export default function SobrePage() {
             <Navbar />
             
             {/* Hero Section */}
-            <section className="relative pt-52 pb-24 px-6 bg-brand-nude luxury-gradient text-center overflow-hidden">
+            <section className="relative pt-52 pb-24 px-6 bg-brand-black text-center overflow-hidden">
+                <div className="absolute inset-0 opacity-40">
+                     <Image src="/catalog_main.png" alt="Overlay" fill className="object-cover grayscale" />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80" />
+                
                 <div className="max-w-4xl mx-auto relative z-10">
-                    <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-gold mb-4 inline-block">Nossa Essência</span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8 text-brand-black leading-tight">Valorizando a <span className="italic">Beleza Feminina</span></h1>
-                    <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">Conheça a história e o propósito por trás da Realce da Beleza, o ponto de referência para aluguer de vestidos de luxo em Luanda.</p>
+                    <span className="text-[10px] uppercase tracking-[0.4em] font-black text-brand-gold mb-6 inline-block opacity-80 animate-fade-in">Nossa Essência</span>
+                    <h1 className="text-4xl md:text-7xl font-serif font-black mb-8 text-white leading-tight">Valorizando a <br /><span className="italic font-normal text-brand-gold">Beleza Feminina</span></h1>
+                    <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto font-medium">Conheça a história e o propósito por trás da Realce da Beleza, o ponto de referência para luxo em Luanda.</p>
                 </div>
             </section>
 
