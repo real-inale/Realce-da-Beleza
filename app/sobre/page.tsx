@@ -14,7 +14,7 @@ export default function SobrePage() {
             <Navbar />
             
             {/* Hero Section */}
-            <section className="relative pt-72 md:pt-96 pb-32 md:pb-48 px-6 bg-brand-black text-center overflow-hidden">
+            <section className="relative pt-[150px] md:pt-[220px] pb-32 md:pb-48 px-6 bg-brand-black text-center overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
                      <Image src="/catalog_main.png" alt="Overlay" fill className="object-cover grayscale" />
                 </div>

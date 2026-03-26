@@ -25,7 +25,7 @@ export default function AcessoriosPage() {
             <Navbar />
             
             {/* Header Section */}
-            <section className="relative pt-72 md:pt-96 pb-32 md:pb-48 px-6 bg-brand-black text-white text-center overflow-hidden">
+            <section className="relative pt-[150px] md:pt-[220px] pb-32 md:pb-48 px-6 bg-brand-black text-white text-center overflow-hidden">
                  <div className="absolute -top-10 -right-20 w-80 h-80 bg-brand-gold/5 rounded-full blur-[100px]" />
                  <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-[100px]" />
                  

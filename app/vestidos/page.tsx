@@ -38,7 +38,7 @@ export default function VestidosPage() {
             <Navbar />
             
             {/* Header Section */}
-            <section className="relative pt-72 md:pt-96 pb-32 md:pb-48 px-6 bg-brand-black text-white text-center overflow-hidden">
+            <section className="relative pt-[150px] md:pt-[220px] pb-32 md:pb-48 px-6 bg-brand-black text-white text-center overflow-hidden">
                  <div className="absolute inset-0 opacity-20">
                      <Image src="/catalog_main.png" alt="Catalog background" fill className="object-cover" />
                  </div>
