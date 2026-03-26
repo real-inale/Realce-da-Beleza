@@ -13,24 +13,24 @@ const workflow = [
 
 export const SummarySection = () => {
     return (
-        <section className="summary py-24 px-6 font-sans luxury-gradient">
+        <section className="summary py-32 px-6 font-sans luxury-gradient">
             <div className="max-w-7xl mx-auto flex flex-col items-center">
                 
                 {/* Brand Emotion */}
-                <div className="text-center mb-24 max-w-3xl">
-                    <div className="flex justify-center gap-1 mb-6 text-brand-gold">
+                <div className="text-center mb-32 max-w-3xl flex flex-col items-center">
+                    <div className="flex justify-center gap-1 mb-8 text-brand-gold opacity-80">
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
                         <Star size={16} fill="currentColor" />
                     </div>
-                    <h2 className="text-3xl md:text-5xl font-serif font-black text-brand-black mb-8 leading-tight">
-                        Criamos este espaço com carinho para <br />
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif font-black text-brand-black mb-10 leading-tight">
+                        Criamos este espaço com carinho para <br className="hidden md:block" />
                         <span className="italic font-normal text-brand-gold">valorizar a beleza feminina</span>
                     </h2>
-                    <p className="text-gray-600 text-lg leading-relaxed mb-10">
-                        Acreditamos que cada mulher merece sentir-se deslumbrante em momentos especiais sem comprometer o orçamento. Nosso compromisso é oferecer elegância, exclusividade e confiança a cada cliente que entra no nosso mundo.
+                    <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-12 max-w-[600px] font-medium">
+                        Acreditamos que cada mulher merece sentir-se deslumbrante em momentos especiais sem comprometer o orçamento. Nosso compromisso é oferecer elegância, exclusividade e confiança.
                     </p>
                     
                     <div className="flex flex-wrap items-center justify-center gap-6 md:gap-12 mb-20">

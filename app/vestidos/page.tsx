@@ -99,7 +99,7 @@ export default function VestidosPage() {
                 <div className="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-12 md:gap-x-8 md:gap-y-16">
                     {filteredVestidos.map((vestido) => (
                         <div key={vestido.id} className="group cursor-pointer">
-                            <div className="relative aspect-[3/4] rounded-3xl overflow-hidden bg-brand-nude mb-5 shadow-lg transition-all duration-700 hover:shadow-2xl hover:-translate-y-2">
+                            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden bg-brand-nude mb-5 shadow-sm transition-all duration-700 hover:shadow-2xl hover:-translate-y-2">
                                 <Image 
                                     src={vestido.img} 
                                     alt={vestido.name} 
@@ -107,8 +107,8 @@ export default function VestidosPage() {
                                     className="object-cover transition-transform duration-1000 group-hover:scale-110" 
                                     sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                 />
-                                <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-black uppercase tracking-widest text-brand-black shadow-xl z-10">
-                                    {vestido.size}
+                                <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-brand-black shadow-lg border border-black/5 z-10 group-hover:bg-brand-gold group-hover:text-white transition-colors">
+                                   Tam. {vestido.size}
                                 </div>
                                 <div className="absolute inset-0 bg-brand-black/20 opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col items-center justify-end p-6 z-20">
                                     <Link 
@@ -116,17 +116,17 @@ export default function VestidosPage() {
                                         target="_blank"
                                         className="w-full"
                                     >
-                                        <Button className="w-full bg-white text-brand-black border-white hover:bg-brand-gold hover:text-white hover:border-brand-gold shadow-2xl transition-all duration-500 py-6 rounded-2xl text-[10px] uppercase font-black tracking-widest translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100">
+                                        <Button className="w-full bg-white text-brand-black border-white hover:bg-brand-gold hover:text-white hover:border-brand-gold shadow-2xl transition-all duration-500 py-6 rounded-2xl text-[10px] uppercase font-black tracking-widest translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 active:scale-95">
                                             <ShoppingBag size={14} className="mr-2" />
                                             Reservar agora
                                         </Button>
                                     </Link>
                                 </div>
                             </div>
-                            <div className="px-2">
-                                <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black text-brand-gold mb-1 opacity-80">{vestido.type}</p>
-                                <h3 className="text-base md:text-lg font-serif font-black text-brand-black mb-1 group-hover:text-brand-gold transition-colors truncate">{vestido.name}</h3>
-                                <p className="text-sm font-black tracking-widest text-brand-black/70">{vestido.price}</p>
+                            <div className="px-1 text-center">
+                                <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] font-black text-brand-gold mb-2 opacity-90">{vestido.type}</p>
+                                <h3 className="text-base md:text-xl font-serif font-black text-brand-black mb-1 group-hover:text-brand-gold transition-colors leading-tight">{vestido.name}</h3>
+                                <p className="text-sm md:text-lg font-bold tracking-tight text-brand-black/90 font-sans">{vestido.price}</p>
                             </div>
                         </div>
                     ))}

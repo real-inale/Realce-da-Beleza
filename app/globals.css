@@ -2,12 +2,18 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #111111;
-  --brand-pink: #f8d7da;
-  --brand-nude: #f5e6e8;
-  --brand-black: #111111;
-  --brand-gold: #d4af37;
-  --brand-gold-light: #f4e4bc;
+  --foreground: #000000;
+  --brand-pink: #fdf2f2;
+  --brand-nude: #f9f5f6;
+  --brand-black: #000000;
+  --brand-gold: #D4AF37;
+  --brand-gold-light: #F4E4BC;
+}
+
+i, .italic {
+  display: inline-block;
+  margin-right: 0.1em;
+  letter-spacing: 0.02em;
 }
 
 @theme {

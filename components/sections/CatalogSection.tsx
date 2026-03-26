@@ -17,13 +17,13 @@ const vestidosDestaque = [
 
 export const CatalogSection = () => {
     return (
-        <section className="catalog py-24 px-6 font-sans bg-white overflow-hidden">
+        <section className="catalog py-32 px-6 font-sans bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 px-4 md:px-0">
                     <div className="max-w-xl">
-                        <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-gold mb-4 inline-block">Galeria Exclusiva</span>
-                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-black leading-tight">
-                            Destaques da <span className="italic">Nossa Coleção</span>
+                        <span className="text-[10px] uppercase tracking-[0.4em] font-black text-brand-gold mb-6 inline-block opacity-80 animate-fade-in">Galeria de Destaque</span>
+                        <h2 className="text-4xl md:text-6xl font-serif font-black text-brand-black leading-tight">
+                            A <span className="italic font-normal text-brand-gold">Essência</span> do <br className="hidden md:block" /> Nosso Acervo
                         </h2>
                     </div>
                     <Link href="/vestidos">
@@ -34,51 +34,44 @@ export const CatalogSection = () => {
                     </Link>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-14">
                     {vestidosDestaque.map((item) => (
                         <div key={item.id} className="group flex flex-col items-center">
                             {/* Card Image Container */}
-                            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-3xl bg-brand-nude shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-brand-gold/10 hover:-translate-y-2">
+                            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-2xl bg-brand-nude shadow-lg transition-all duration-500 hover:shadow-2xl hover:shadow-brand-gold/10 hover:-translate-y-2">
                                 <Image 
                                     src={item.img} 
                                     alt={item.name} 
                                     fill 
                                     className="object-cover object-center transition-transform duration-700 group-hover:scale-110"
+                                    sizes="(max-width: 768px) 100vw, 33vw"
                                 />
                                 {/* Overlay on Hover */}
-                                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/80 to-transparent opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500 flex flex-col gap-4">
+                                <div className="absolute inset-x-0 bottom-0 p-8 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 flex flex-col gap-4">
                                     <Link 
                                         href={`https://wa.me/244943700307?text=Olá, gostaria de reservar o vestido ${item.name}.`} 
                                         target="_blank"
                                         className="w-full"
                                     >
-                                        <Button className="w-full bg-brand-gold border-brand-gold hover:bg-white hover:text-brand-gold hover:border-white transition-all">
-                                            <MessageCircle size={18} className="mr-2" />
+                                        <Button className="w-full bg-white text-black border-white hover:bg-brand-gold hover:text-white hover:border-brand-gold transition-all duration-500 rounded-xl py-6 font-black text-[10px] tracking-widest active:scale-95">
+                                            <ShoppingBag size={18} className="mr-3" />
                                             Reservar via WhatsApp
                                         </Button>
                                     </Link>
                                 </div>
-                                <div className="absolute top-6 right-6 flex flex-col gap-3 translate-x-12 group-hover:translate-x-0 transition-all duration-500">
-                                    <button className="p-3 bg-white text-brand-black rounded-full hover:bg-brand-gold hover:text-white transition-all shadow-md">
-                                        <Heart size={18} />
-                                    </button>
-                                    <button className="p-3 bg-white text-brand-black rounded-full hover:bg-brand-gold hover:text-white transition-all shadow-md">
-                                        <Eye size={18} />
-                                    </button>
-                                </div>
-                                <div className="absolute top-6 left-6 py-1 px-4 bg-white/50 backdrop-blur-md rounded-full border border-white/20 text-[10px] uppercase tracking-widest font-bold">
+                                <div className="absolute top-6 left-6 py-2 px-6 bg-white/95 backdrop-blur-md rounded-full border border-black/5 text-[9px] uppercase tracking-[0.2em] font-black group-hover:bg-brand-gold group-hover:text-white transition-colors duration-500">
                                     {item.type}
                                 </div>
                             </div>
                             
                             {/* Info */}
-                            <div className="mt-8 text-center">
-                                <h4 className="text-xl font-serif font-bold text-brand-black mb-2 hover:text-brand-gold transition-colors cursor-pointer">{item.name}</h4>
-                                <p className="text-brand-gold font-bold tracking-[0.2em] uppercase text-xs mb-3">{item.price}</p>
-                                <div className="flex gap-2 justify-center">
-                                    <div className="w-3 h-3 rounded-full bg-brand-pink border border-gray-200" />
-                                    <div className="w-3 h-3 rounded-full bg-brand-gold border border-gray-200" />
-                                    <div className="w-3 h-3 rounded-full bg-brand-black border border-gray-200" />
+                            <div className="mt-10 text-center px-4">
+                                <h4 className="text-xl md:text-2xl font-serif font-black text-brand-black mb-3 hover:text-brand-gold transition-colors cursor-pointer leading-tight">{item.name}</h4>
+                                <p className="text-brand-gold font-bold tracking-[0.25em] uppercase text-xs md:text-sm font-sans mb-6 opacity-90">{item.price}</p>
+                                <div className="flex gap-4 justify-center">
+                                    <div className="w-4 h-4 rounded-full bg-brand-pink border border-black/5 shadow-inner" title="Rosa" />
+                                    <div className="w-4 h-4 rounded-full bg-brand-gold border border-black/5 shadow-inner" title="Dourado" />
+                                    <div className="w-4 h-4 rounded-full bg-brand-black border border-black/5 shadow-inner" title="Preto" />
                                 </div>
                             </div>
                         </div>

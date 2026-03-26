@@ -24,7 +24,7 @@ export const Hero = () => {
             ref={heroRef}
             className="relative min-h-screen w-full flex items-center justify-center overflow-hidden font-sans"
         >
-            {/* Background Image */}
+            {/* Background Image with Dark Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image 
                     src="/hero.png" 
@@ -33,24 +33,24 @@ export const Hero = () => {
                     className="object-cover object-center scale-105"
                     priority
                 />
-                <div className="absolute inset-0 bg-brand-black/40 backdrop-blur-[2px]" />
+                <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80 backdrop-blur-[1px]" />
             </div>
 
             {/* Content Overflow */}
             <div 
                 ref={contentRef}
-                className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-20 flex flex-col items-center text-center"
+                className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-24 flex flex-col items-center text-center"
             >
-                <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md px-6 py-2 rounded-full border border-white/20 mb-8 animate-fade-down duration-1000">
+                <div className="flex items-center gap-3 bg-white/5 backdrop-blur-md px-6 py-2 rounded-full border border-white/10 mb-8 animate-fade-down duration-1000">
                    <span className="text-white text-[10px] uppercase tracking-[0.4em] font-black">✨ Coleção Exclusiva de Luxo ✨</span>
                 </div>
 
-                <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif font-black mb-6 flex flex-col gap-2 md:gap-4 leading-tight">
+                <h1 className="text-4xl md:text-7xl lg:text-8xl font-serif font-black mb-8 flex flex-col gap-2 md:gap-4 leading-tight">
                   <span className="text-white drop-shadow-2xl">Realce a sua beleza nos</span>
-                  <span className="text-brand-gold italic drop-shadow-2xl brightness-110 px-2">momentos mais especiais</span>
+                  <span className="text-brand-gold italic drop-shadow-2xl brightness-110 px-2 lg:px-0">momentos mais especiais</span>
                 </h1>
 
-                <p className="description text-lg md:text-xl text-gray-200 mb-12 max-w-2xl leading-relaxed drop-shadow-md">
+                <p className="description text-lg md:text-xl text-gray-200 mb-12 max-w-[600px] leading-relaxed drop-shadow-md font-sans">
                    Sinta-se única e poderosa. Alugamos vestidos exclusivos que transformam a sua presença em qualquer evento, sem precisar comprar.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6 mb-20 animate-fade-up duration-1000">
