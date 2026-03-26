@@ -25,7 +25,7 @@ export default function AcessoriosPage() {
             <Navbar />
             
             {/* Header Section */}
-            <section className="relative pt-40 pb-24 px-6 bg-brand-pink/20 luxury-gradient text-center overflow-hidden">
+            <section className="relative pt-52 pb-24 px-6 bg-brand-black text-white text-center overflow-hidden">
                  <div className="absolute -top-10 -right-20 w-80 h-80 bg-brand-gold/5 rounded-full blur-[100px]" />
                  <div className="absolute -bottom-20 -left-20 w-80 h-80 bg-brand-gold/10 rounded-full blur-[100px]" />
                  
@@ -71,7 +71,7 @@ export default function AcessoriosPage() {
             {/* Special Pack Section */}
             <section className="py-24 px-6 bg-brand-black text-white relative overflow-hidden">
                 <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16">
-                    <div className="relative h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl skew-y-2 group">
+                    <div className="relative h-[300px] md:h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl relative group">
                          <Image src="/catalog_main.png" alt="Combo Promo" fill className="object-cover group-hover:scale-110 transition-transform duration-1000" />
                          <div className="absolute inset-0 bg-gradient-to-t from-brand-black to-transparent" />
                          <div className="absolute bottom-10 left-10 py-2 px-6 bg-brand-gold text-white font-bold rounded-full text-xs uppercase tracking-widest">Oferta de Inauguração</div>

@@ -14,7 +14,7 @@ export default function SobrePage() {
             <Navbar />
             
             {/* Hero Section */}
-            <section className="relative pt-40 pb-20 px-6 bg-brand-nude luxury-gradient text-center overflow-hidden">
+            <section className="relative pt-52 pb-24 px-6 bg-brand-nude luxury-gradient text-center overflow-hidden">
                 <div className="max-w-4xl mx-auto relative z-10">
                     <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-gold mb-4 inline-block">Nossa Essência</span>
                     <h1 className="text-4xl md:text-6xl font-serif font-bold mb-8 text-brand-black leading-tight">Valorizando a <span className="italic">Beleza Feminina</span></h1>
@@ -25,14 +25,20 @@ export default function SobrePage() {
             {/* Emotional Story telling */}
             <section className="py-24 px-6 max-w-7xl mx-auto">
                  <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-20">
-                    <div className="relative h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl skew-x-1 group">
-                         <Image src="/catalog_main.png" alt="Realce da Beleza Store" fill className="object-cover group-hover:scale-105 transition-transform duration-1000" />
-                         <div className="absolute inset-0 bg-gradient-to-t from-brand-black/40 to-transparent" />
-                         <div className="absolute bottom-10 left-10 p-8 glass-card rounded-2xl border-white bg-white/20 text-white">
-                            <h3 className="text-2xl font-serif font-bold mb-2">Fundado com Ambição</h3>
-                            <p className="text-sm">Criado para empoderar mulheres angolanas.</p>
-                         </div>
-                    </div>
+                     <div className="relative h-[400px] md:h-[600px] w-full rounded-3xl overflow-hidden shadow-2xl group">
+                          <Image 
+                            src="/catalog_main.png" 
+                            alt="Realce da Beleza Store" 
+                            fill 
+                            className="object-cover group-hover:scale-105 transition-transform duration-1000" 
+                            sizes="(max-width: 768px) 100vw, 50vw"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-brand-black/60 via-transparent to-transparent" />
+                          <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 p-6 md:p-8 glass-card rounded-2xl border-white bg-white/20 text-white backdrop-blur-md max-w-[280px]">
+                             <h3 className="text-xl md:text-2xl font-serif font-black mb-2">Fundado com Ambição</h3>
+                             <p className="text-xs md:text-sm font-medium opacity-90 leading-tight">Criado para empoderar mulheres angolanas com elegância acessível.</p>
+                          </div>
+                     </div>
                     <div>
                         <h2 className="text-3xl md:text-5xl font-serif font-bold text-brand-black mb-10 leading-tight">
                             Uma história de <br /><span className="text-brand-gold italic">elegância e confiança</span>

@@ -32,7 +32,8 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        "fixed top-0 left-0 right-0 transition-all duration-500",
+        isOpen ? "z-[9999]" : "z-50",
         scrolled 
           ? "bg-white/95 backdrop-blur-md shadow-2xl py-2" 
           : "bg-transparent py-4 mx-0 md:mx-4 lg:mx-10 mt-0 md:mt-4 md:rounded-full"
@@ -116,26 +117,31 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, x: "100%" }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: "100%" }}
-            transition={{ type: "spring", bounce: 0, duration: 0.6 }}
-            className="fixed inset-0 bg-white z-[100] flex flex-col pt-10"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", bounce: 0, duration: 0.5 }}
+            className="fixed inset-0 bg-white z-[99999] flex flex-col transition-colors"
           >
-            <div className="px-8 flex justify-between items-center mb-16">
-               <div className="flex items-center gap-2">
-                 <Image src="/logo.png" alt="Logo" width={40} height={40} />
-                 <span className="font-serif font-black text-brand-black tracking-tighter">Realce da Beleza</span>
-               </div>
+            <div className="px-8 flex justify-between items-center py-6 border-b border-brand-nude/50 mb-10 shrink-0">
+               <Link href="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
+                 <div className="relative w-12 h-12">
+                    <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+                 </div>
+                 <div className="flex flex-col -gap-1">
+                    <span className="font-serif font-black text-brand-black tracking-tighter text-lg leading-tight">Realce da</span>
+                    <span className="font-serif font-bold text-brand-gold tracking-[0.2em] uppercase text-[10px] leading-tight opacity-80">Beleza</span>
+                 </div>
+               </Link>
                <button
-                  className="p-4 rounded-full bg-brand-black/5 text-brand-black hover:bg-brand-black hover:text-white transition-all transform hover:rotate-90 duration-300"
+                  className="p-3 rounded-full bg-brand-black/5 text-brand-black hover:bg-brand-black hover:text-white transition-all transform hover:rotate-90 duration-500"
                   onClick={() => setIsOpen(false)}
                >
                   <X size={24} />
                </button>
             </div>
             
-            <div className="flex flex-col items-center gap-10">
+            <div className="flex-1 overflow-y-auto px-6 py-10 flex flex-col items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}

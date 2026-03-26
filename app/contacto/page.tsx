@@ -13,13 +13,13 @@ export default function ContactoPage() {
             <Navbar />
             
             {/* Header Section */}
-            <section className="relative pt-40 pb-20 px-6 bg-brand-black text-white text-center overflow-hidden">
+            <section className="relative pt-52 pb-24 px-6 bg-brand-black text-white text-center overflow-hidden">
                  <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3" />
                  <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-pink/10 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/3" />
                  <div className="max-w-4xl mx-auto relative z-10">
-                    <span className="text-xs uppercase tracking-[0.3em] font-bold text-brand-gold mb-4 inline-block">Fale Conosco</span>
-                    <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">Entre em <span className="italic">Sintonia</span></h1>
-                    <p className="text-gray-400 max-w-xl mx-auto text-lg">Pronta para reservar sua peça favorita ou agendar uma prova? Nossa equipe está à disposição para te atender com carinho e exclusividade.</p>
+                    <span className="text-xs uppercase tracking-[0.3em] font-black text-brand-gold mb-4 inline-block opacity-80 animate-fade-in">Fale Conosco</span>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-serif font-black mb-6 leading-tight drop-shadow-sm px-4">Entre em <br className="sm:hidden" /><span className="italic text-brand-gold">Sintonia</span></h1>
+                    <p className="text-gray-400 max-w-xl mx-auto text-lg md:text-xl font-medium px-4">Pronta para reservar sua peça favorita ou agendar uma prova? Nossa equipe está à disposição para te atender com carinho.</p>
                  </div>
             </section>
 
@@ -27,8 +27,8 @@ export default function ContactoPage() {
             <section className="py-24 px-6 max-w-7xl mx-auto">
                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
                     {/* Contact Info Cards */}
-                    <div className="space-y-10 order-2 lg:order-1">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="flex flex-col gap-10 order-2 lg:order-1">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                              <div className="p-10 border border-brand-nude rounded-3xl shadow-xl shadow-brand-pink/5 hover:-translate-y-2 transition-all group cursor-pointer duration-500">
                                  <div className="p-4 bg-brand-nude text-brand-gold rounded-full w-fit mb-8 group-hover:scale-110 transition-transform">
                                      <Phone size={24} />
@@ -96,8 +96,8 @@ export default function ContactoPage() {
                         </div>
                     </div>
 
-                    {/* Integrated Map (Iframe placeholder for Camama Luanda) */}
-                    <div className="order-1 lg:order-2 h-full min-h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl skew-y-1 group">
+                    {/* Integrated Map */}
+                    <div className="order-1 lg:order-2 h-[500px] lg:h-full w-full rounded-3xl overflow-hidden shadow-2xl relative group">
                          <div className="absolute inset-0 bg-brand-nude/30 animate-pulse group-hover:opacity-0 transition-opacity z-[1]" />
                          <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15764.57790757262!2d13.25!3d-8.9!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f38e4a9e5b7b%3A0x6bba4f2795f9c6d3!2sCamama%2C%20Luanda!5e0!3m2!1spt-PT!2sao!4v1711475000000!5m2!1spt-PT!2sao" 
