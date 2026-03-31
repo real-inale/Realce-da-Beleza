@@ -1,5 +1,5 @@
- 'use client'
-import { useState } from 'react'
+'use client'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { dresses } from '../../lib/dresses'
 
@@ -8,6 +8,12 @@ export default function Vestidos() {
   const [colorsOpen, setColorsOpen] = useState(false)
   // use shared dress data
   const dressesData = dresses
+
+  useEffect(() => {
+    // #region agent log
+    fetch('http://127.0.0.1:7710/ingest/ad6744e7-9db0-45c9-a5cf-f861a5ebc74f',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'36abe8'},body:JSON.stringify({sessionId:'36abe8',runId:'pre-fix',hypothesisId:'H1',location:'src/app/vestidos/page.tsx:14',message:'vestidos list mounted',data:{totalDresses:dressesData.length,hasImageInCards:dressesData.some((d)=>Boolean(d.images?.length))},timestamp:Date.now()})}).catch(()=>{});
+    // #endregion
+  }, [dressesData])
 
   const filteredDresses = selectedColor ? dressesData.filter(d => d.colors.includes(selectedColor)) : dressesData
 

@@ -88,11 +88,11 @@ export default function Home() {
           <h2 className="text-4xl font-title mb-8">Depoimentos</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-6 rounded-lg">
-              <p>"Adorei o vestido! Perfeito para o meu casamento."</p>
+              <p>&quot;Adorei o vestido! Perfeito para o meu casamento.&quot;</p>
               <p className="mt-4 font-body">- Maria Silva</p>
             </div>
             <div className="bg-white p-6 rounded-lg">
-              <p>"Atendimento excelente e preços acessíveis."</p>
+              <p>&quot;Atendimento excelente e preços acessíveis.&quot;</p>
               <p className="mt-4 font-body">- Ana Costa</p>
             </div>
           </div>

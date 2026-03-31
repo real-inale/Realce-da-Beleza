@@ -1,0 +1,10 @@
+{"sessionId":"36abe8","runId":"pre-fix","hypothesisId":"H3","location":"next.config.js:2","message":"next config loaded for build","data":{"nodeEnv":"production","ci":null},"timestamp":1774983157346}
+{"sessionId":"36abe8","runId":"pre-fix","hypothesisId":"H3","location":"next.config.js:2","message":"next config loaded for build","data":{"nodeEnv":"production","ci":null},"timestamp":1774983279525}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H5","location":"src/app/acessorios/[id]/page.tsx:7","message":"generateStaticParams accessorios","data":{"ids":[1,2,3,4]},"timestamp":1774983289251}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H6","location":"src/app/vestidos/[id]/page.tsx:7","message":"generateStaticParams vestidos","data":{"ids":[1,2,3]},"timestamp":1774983289490}
+{"sessionId":"36abe8","runId":"pre-fix","hypothesisId":"H3","location":"next.config.js:2","message":"next config loaded for build","data":{"nodeEnv":"production","ci":null},"timestamp":1774984103958}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H5","location":"src/app/acessorios/[id]/page.tsx:7","message":"generateStaticParams accessorios","data":{"ids":[1,2,3,4]},"timestamp":1774984110711}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H6","location":"src/app/vestidos/[id]/page.tsx:7","message":"generateStaticParams vestidos","data":{"ids":[1,2,3]},"timestamp":1774984110791}
+{"sessionId":"36abe8","runId":"pre-fix","hypothesisId":"H3","location":"next.config.js:2","message":"next config loaded for build","data":{"nodeEnv":"production","ci":null},"timestamp":1774984397022}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H5","location":"src/app/acessorios/[id]/page.tsx:7","message":"generateStaticParams accessorios","data":{"ids":[1,2,3,4]},"timestamp":1774984403783}
+{"sessionId":"36abe8","runId":"post-fix","hypothesisId":"H6","location":"src/app/vestidos/[id]/page.tsx:7","message":"generateStaticParams vestidos","data":{"ids":[1,2,3]},"timestamp":1774984403917}
